@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/5787/5787016.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodPoint | Вкусът, който заслужаваш</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+    <a href="index.html" class="logo">FOOD<span>POINT</span></a>
+
+    <nav class="nav">
+        <a class="active" href="index.html">Начало</a>
+        <a href="menu.html">Меню</a>
+        <a href="about.html">За нас</a>
+    </nav>
+
+    <a href="order.html" class="cart-link">
+        Количка <span id="cart-count">0</span>
+    </a>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <span class="tag">ВКУСНО. СВЕЖО. ИСТИНСКО.</span>
+
+        <h1>Вкусът, който<br> <span>заслужаваш.</span></h1>
+
+        <p>
+            Приготвена с любов храна, качествени продукти
+            и вкус, който ще те накара да се върнеш отново.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="menu.html" class="btn btn-primary">Поръчай сега →</a>
+            <a href="about.html" class="btn btn-outline">Научи повече</a>
+        </div>
+
+        <div class="hero-stats">
+            <div>
+                <strong>100%</strong>
+                <small>Свежи продукти</small>
+            </div>
+            <div>
+                <strong>Вкус</strong>
+                <small>Без компромиси</small>
+            </div>
+            <div>
+                <strong>Made fresh</strong>
+                <small>Приготвено за теб</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1000&q=85"
+             alt="Вкусен бургер">
+        <div class="floating-price">
+            <small>Наш фаворит</small>
+            <strong>Classic Burger</strong>
+            <span>9.90 лв.</span>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="section-heading">
+        <div>
+            <span class="tag">ИЗБРАНО ЗА ТЕБ</span>
+            <h2>Популярни <span>вкусове</span></h2>
+        </div>
+        <a href="menu.html" class="text-link">Виж цялото меню →</a>
+    </div>
+
+    <div class="food-grid">
+
+        <article class="food-card">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80" alt="Classic burger">
+            <div class="food-info">
+                <div class="food-title">
+                    <h3>Classic Burger</h3>
+                    <span class="price">9.90 лв.</span>
+                </div>
+                <p>Телешко, чедър, свежа салата и наш специален сос.</p>
+                <button class="btn-add" onclick="addToCart('Classic Burger', 9.90)">+ Добави</button>
+            </div>
+        </article>
+
+        <article class="food-card">
+            <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=700&q=80" alt="Crispy chicken">
+            <div class="food-info">
+                <div class="food-title">
+                    <h3>Crispy Chicken</h3>
+                    <span class="price">8.90 лв.</span>
+                </div>
+                <p>Хрупкаво пилешко, свежи зеленчуци и кремообразен сос.</p>
+                <button class="btn-add" onclick="addToCart('Crispy Chicken', 8.90)">+ Добави</button>
+            </div>
+        </article>
+
+        <article class="food-card">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=700&q=80" alt="Pizza">
+            <div class="food-info">
+                <div class="food-title">
+                    <h3>Italian Pizza</h3>
+                    <span class="price">11.90 лв.</span>
+                </div>
+                <p>Домашно тесто, ароматен доматен сос, моцарела и босилек.</p>
+                <button class="btn-add" onclick="addToCart('Italian Pizza', 11.90)">+ Добави</button>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<section class="promo-banner">
+    <div>
+        <span class="tag">ТВОЯТА ХРАНА. ТВОЕТО ВРЕМЕ.</span>
+        <h2>Поръчай предварително.<br>Вземи, когато си готов.</h2>
+        <p>Без чакане. Без компромиси. Само хубава храна.</p>
+        <a href="menu.html" class="btn btn-primary">Разгледай менюто →</a>
+    </div>
+</section>
+
+<footer class="footer">
+    <a href="index.html" class="logo">FOOD<span>POINT</span></a>
+    <p>Добрата храна събира хората.</p>
+    <div class="footer-links">
+        <a href="index.html">Начало</a>
+        <a href="menu.html">Меню</a>
+        <a href="about.html">За нас</a>
+        <a href="order.html">Поръчка</a>
+    </div>
+    <small>© 2026 FoodPoint. Всички права запазени.</small>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

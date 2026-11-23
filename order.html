@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/5787/5787016.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моята поръчка | FoodPoint</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+    <a href="index.html" class="logo">FOOD<span>POINT</span></a>
+    <nav class="nav">
+        <a href="index.html">Начало</a>
+        <a href="menu.html">Меню</a>
+        <a href="about.html">За нас</a>
+    </nav>
+    <a href="order.html" class="cart-link">Количка <span id="cart-count">0</span></a>
+</header>
+
+<section class="page-banner">
+    <span class="tag">ПОЧТИ ГОТОВО</span>
+    <h1>Твоята <span>поръчка.</span></h1>
+    <p>Избери любимото си и посочи кога искаш да го вземеш.</p>
+</section>
+
+<section class="section order-section">
+
+    <div class="order-layout">
+
+        <!-- КОЛИЧКА -->
+        <div class="order-box">
+            <h2>Продукти в количката</h2>
+            <div id="cart-items"></div>
+
+            <div class="cart-total">
+                <span>Общо:</span>
+                <strong id="cart-total">0.00 лв.</strong>
+            </div>
+
+            <a href="menu.html" class="text-link">← Добави още продукти</a>
+        </div>
+
+        <!-- ФОРМА ЗА ПОРЪЧКА -->
+        <div class="order-box">
+            <h2>Информация за поръчката</h2>
+
+            <form id="checkout-form">
+
+                <label for="customer-name">Име и фамилия</label>
+                <input type="text" id="customer-name" placeholder="Твоето име" required>
+
+                <label for="customer-phone">Телефон</label>
+                <input type="tel" id="customer-phone" placeholder="08XXXXXXXX" required>
+
+                <label for="pickup-date">Дата за вземане</label>
+                <input type="date" id="pickup-date" required>
+
+                <label for="pickup-time">Час за вземане</label>
+                <input type="time" id="pickup-time" required>
+
+                <label for="order-note">Допълнителни бележки</label>
+                <textarea id="order-note" rows="4" placeholder="Например: без лук, допълнителен сос..."></textarea>
+
+                <div class="pickup-notice">
+                    <strong>📍 Само вземане от място</strong>
+                    <p>Ще приготвим поръчката ти за избрания час.</p>
+                </div>
+
+                <button type="submit" class="btn btn-primary full-btn">
+                    Потвърди поръчката →
+                </button>
+
+                <p class="form-small">
+                    Това е демо версия. Формата не изпраща реална поръчка към ресторант.
+                </p>
+
+            </form>
+        </div>
+
+    </div>
+</section>
+
+<footer class="footer">
+    <a href="index.html" class="logo">FOOD<span>POINT</span></a>
+    <p>Добрата храна събира хората.</p>
+    <div class="footer-links">
+        <a href="index.html">Начало</a>
+        <a href="menu.html">Меню</a>
+        <a href="about.html">За нас</a>
+    </div>
+    <small>© 2026 FoodPoint. Всички права запазени.</small>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
